@@ -1,0 +1,14 @@
+@nsobid-9B4E43650501A4D4489B4BBFDB740F26AF3CF850
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+// remove duration limit
+01d624f4 08F0AFD2 // mov x8, #0x7f800000
+// remove one shot damage
+01d62580 1F2003D5 // nop
+// remove auto death
+01d62b54 1F2003D5 // nop
+01d6251c 1F2003D5 // nop
+@stop
